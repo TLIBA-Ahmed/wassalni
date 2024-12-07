@@ -1,0 +1,438 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+
+        <title>WASSALNI</title>
+
+       
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+      
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+   
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+   
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+	
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+   
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+     
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+    </head>
+
+
+
+
+    <body>
+		
+        
+		<section id="home" class="welcome-hero">
+
+			
+			<div class="top-area">
+				<div class="header-area">
+					
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index.html">WASSALNI<span></span></a>
+
+				            </div>
+				            
+
+				            
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li><a href="index.html">home</a></li>
+				                    <li><a href="service.html">service</a></li>
+				                    <li><a href="featured_rides.html">featured rides</a></li>
+				                    <li class="scroll"><a href="#brand">partners</a></li>
+				                    <li><a href="sing.html">sign up</a></li>
+				                </ul>
+				            </div>
+				        </div>
+				    </nav>
+				    
+				</div>
+			    <div class="clearfix"></div>
+
+			</div>
+			
+
+			<div class="container">
+				<div class="welcome-hero-txt" style="margin-top: -5	0px ;">
+					<h2>get your desired carpooling in resonable price</h2>
+					<p>
+						Carpooling offers a convenient and affordable way for all types of users to travel by sharing a vehicle for a common route. Daily commutes, long-distance trips, or occasional outings, carpooling provides an economical alternative to other modes of transport.					</p>
+					<!-- <button class="welcome-btn" onclick="window.location.href='sing.html'">sing up free</button> -->
+				</div>
+			</div>
+
+			<div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="model-search-content">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-2 col-sm-12" style="margin-left:130px;margin-right:20px;">
+                                    <div class="single-model-search mb-3">
+                                        <h2>Nom</h2>
+                                        <div class="model-select-icon">
+                                            <input type="text" class="form-control" name="nom" placeholder="Votre nom" required>
+                                        </div>
+                                    </div>
+                                    <div class="single-model-search mb-3">
+                                        <h2>Prénom</h2>
+                                        <div class="model-select-icon">
+                                            <input type="text" class="form-control" name="prenom" placeholder="Votre prénom" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-offset-1 col-md-2 col-sm-12" style="margin-left:20px;margin-right:20px;">
+                                    <div class="single-model-search mb-3">
+                                        <h2>Numéro de téléphone</h2>
+                                        <div class="model-select-icon">
+                                            <input type="tel" class="form-control" name="telephone" placeholder="Votre numéro" required>
+                                        </div>
+                                    </div>
+                                    <div class="single-model-search mb-3">
+                                        <h2>Adresse mail</h2>
+                                        <div class="model-select-icon">
+                                            <input type="email" class="form-control" name="email" placeholder="Votre adresse mail" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-offset-1 col-md-2 col-sm-12" style="margin-left:20px;margin-right:20px;">
+                                    <div class="single-model-search mb-3">
+                                        <h2>Rôle</h2>
+                                        <div class="model-select-icon">
+                                            <select class="form-control" name="role" required>
+                                                <option value="">Sélectionnez un rôle</option>
+                                                <option value="propose">Propose un covoiturage</option>
+                                                <option value="offre">Offre un covoiturage</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="single-model-search mb-3">
+                                        <h2>Point de départ</h2>
+                                        <div class="model-select-icon">
+                                            <input type="text" class="form-control" name="depart" placeholder="Point de départ" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-offset-1 col-md-2 col-sm-12" style="margin-left:20px;margin-right:20px;">
+                                    <div class="single-model-search mb-3">
+                                        <h2>Point d'arrivée</h2>
+                                        <div class="model-select-icon">
+                                            <input type="text" class="form-control" name="arrivee" placeholder="Point d'arrivée" required>
+                                        </div>
+                                    </div>
+                                    <div class="single-model-search mb-3">
+                                        <h2>Commentaire</h2>
+                                        <div class="model-select-icon">
+                                            <textarea class="form-control" name="commentaire" placeholder="Votre commentaire"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-12" style="position: relative; height: 150px;">
+                                    <div class="single-model-search text-center" style="position: absolute; top: 50px ; left: 580px; transform: translate(-50%, -50%);">
+                                        <button class="welcome-btn model-search-btn" type="submit">
+                                            Soumettre
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+            
+
+		</section>		
+
+        <style>
+            #clients-say {
+                margin-top: 120px;
+            }
+          </style>
+		<section id="clients-say"  class="clients-say">
+			<div class="container">
+				<div class="section-header">
+					<h2>what our clients say</h2>
+				</div>
+				<div class="row">
+					<div class="owl-carousel testimonial-carousel">
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c1.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+										Excellente expérience, conducteur ponctuel et voiture confortable. Je recommande ce service sans hésiter!
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Bilel Troudi</a></h2>
+										<h4>Ben Arous</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c2.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Très bon covoiturage, espace pour les bagages et musique au choix. Service fiable et agréable, je recommande !	
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Samia Bennour</a></h2>
+										<h4>Tunis</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c3.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Trajet impeccable et conducteur sympathique. Je recommande vivement ce site pour un covoiturage de qualité.											
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Karim Jebali</a></h2>
+										<h4>Jendouba</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>	
+		
+
+		
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/assurance ami.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/shell.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/assurance star.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/pirelli.png" alt="brand-image" />
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/totalenergie.jpg" alt="brand-image" />
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/michelin.png" alt="brand-image" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>	
+		
+
+		
+		<section id="blog" class="blog"></section>
+		
+
+		
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">WASSALNI</a>
+								</div>
+								<p>
+									Carpooling offers a convenient and affordable way for all types of users to travel by sharing a vehicle for a common route.
+								</p>
+								<div class="footer-contact">
+									<p>contact@wassalni.com</p>
+									<p>+216 98 513 126</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about wassalni</h2>
+								<ul>
+									<li><a href="#">about us</a></li>
+									<li><a href="#">career</a></li>
+									<li><a href="#">terms <span> of service</span></a></li>
+									<li><a href="#">privacy policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>most demanded covoiturage routes</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+											<li><a href="#">Tunis - La Marsa</a></li>
+											<li><a href="#">Sfax - Tunis</a></li>
+											<li><a href="#">Tunis - Hammamet</a></li>
+											<li><a href="#">Bizerte - Tunis</a></li>
+											<li><a href="#">Tunis - Sousse</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>news letter</h2>
+								<div class="footer-newsletter">
+									<p>
+										Subscribe to get latest news  update and informations
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Add Email">
+									</div>
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright.designed and developed by WASSALNI.
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div>
+			
+        </footer>
+		
+
+		
+
+
+		<script src="assets/js/jquery.js"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+	
+		<script src="assets/js/bootsnav.js"></script>
+
+		
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+      
+        <script src="assets/js/custom.js"></script>
+
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+		<script src="js/map.js"></script>
+
+        
+    </body>
+
+</html> 

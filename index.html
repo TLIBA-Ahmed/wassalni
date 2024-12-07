@@ -1,0 +1,802 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
+        
+
+        <title>WASSALNI</title>
+
+       
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+       
+      
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+        
+		<link rel="stylesheet" href="assets/css/linearicons.css">
+
+   
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+
+
+        <link rel="stylesheet" href="assets/css/animate.css">
+
+
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		
+   
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+	
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >	
+        
+   
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+     
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+    </head>
+
+
+
+
+    <body>
+		
+        
+		<section id="home" class="welcome-hero">
+
+			
+			<div class="top-area">
+				<div class="header-area">
+					
+				    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"  data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+				        <div class="container">
+
+				            
+				            <div class="navbar-header">
+				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+				                    <i class="fa fa-bars"></i>
+				                </button>
+				                <a class="navbar-brand" href="index.html">WASSALNI<span></span></a>
+
+				            </div>
+				            
+
+				            
+				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+				                    <li><a href="index.html">home</a></li>
+				                    <li><a href="service.html">service</a></li>
+				                    <li><a href="featured_rides.html">featured rides</a></li>
+				                    <li class="scroll"><a href="#brand">partners</a></li>
+				                    <li><a href="sing.html">sign up</a></li>
+				                </ul>
+				            </div>
+				        </div>
+				    </nav>
+				    
+				</div>
+			    <div class="clearfix"></div>
+
+			</div>
+			
+
+			<div class="container">
+				<div class="welcome-hero-txt">
+					<h2>get your desired carpooling in resonable price</h2>
+					<p>
+						Carpooling offers a convenient and affordable way for all types of users to travel by sharing a vehicle for a common route. Daily commutes, long-distance trips, or occasional outings, carpooling provides an economical alternative to other modes of transport.					</p>
+					<button class="welcome-btn" onclick="window.location.href='sing.html'">sing up free</button>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="model-search-content">
+							<div class="row">
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2>select date</h2>
+										<div class="model-select-icon">
+											
+												<input type="date" class="form-control">
+
+		
+										</div>
+									</div>
+									<div class="single-model-search">
+										<h2>select payment</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">style</option>
+
+											  	<option value="sedan">Cash</option>
+
+											  	<option value="van">Carte Visa</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2>select departure</h2>
+										<div id="map" style="height: 10px; width: 100%;"></div>
+										<input type="text" id="departure" class="form-control" placeholder="Selected Location" >
+									</div>
+									<div class="single-model-search">
+										<h2>select number of places</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">1</option>
+
+											  	<option value="something">2</option>
+
+											  	<option value="something">3</option>
+											  	<option value="something">4</option>
+
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-offset-1 col-md-2 col-sm-12">
+									<div class="single-model-search">
+										<h2>select destination</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+											  	<option value="default">MAP</option>
+
+											  	
+											</select>
+										</div>
+									</div>
+									<div class="single-model-search">
+										<h2>select budget</h2>
+										<div class="model-select-icon">
+											<select class="form-control">
+
+                                                <option value="default">price</option>
+                                                
+                                                <option value="$0.00">$0.00</option>
+                                                
+                                                <option value="$0.00">$0.00</option>
+                                                
+                                                <option value="$0.00">$0.00</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 col-sm-12">
+									<div class="single-model-search text-center">
+										<button class="welcome-btn model-search-btn" onclick="window.location.href='featured_rides.html'">
+											search
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+		<section id="service" class="service">
+			<div class="container">
+				<div class="service-content">
+					<div class="row">
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car"></i>
+								</div>
+								<h2><a href="#">Système de réservation instantanée<span> of</span> car</a></h2>
+								<p>
+									Permet aux passagers de réserver immédiatement, sans attendre la confirmation du conducteur, pour plus de rapidité et de simplicité.								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-repair"></i>
+								</div>
+								<h2><a href="#">Notifications en temps réel </a></h2>
+								<p>
+									Alertes et notifications pour informer les utilisateurs de l’état de leur réservation, des modifications d’horaires, ou de la position du conducteur en temps réel.								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-service-item">
+								<div class="single-service-icon">
+									<i class="flaticon-car-1"></i>
+								</div>
+								<h2><a href="#">Programme de fidélité </a></h2>
+								<p>
+									Un système de points ou de réductions pour les utilisateurs réguliers, encourageant ainsi la fidélité et offrant des avantages financiers.								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+
+		
+		<section id="new-cars" class="new-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> latest carpooling</p>
+					<h2>newest offers</h2>
+				</div>
+				<div class="new-cars-content">
+					<div class="owl-carousel owl-theme" id="new-cars-carousel">
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/polo 7.jpg" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Volkswagen <span> Polo 7</span></a></h2>
+											<p>The Volkswagen Polo 7, launched in 2017, is a refined and compact hatchback that balances style, technology, and practicality. Known for its spacious interior and smooth ride, it offers advanced safety features and modern infotainment options. With efficient engine choices, the Polo 7 has become a popular choice for those seeking a reliable and well-rounded city car.</p>
+											<p class="new-cars-para2"></p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">view details</button>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/ibiza.jpg" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Seat IBIZA</a></h2>
+											<p>The Seat Ibiza is a compact city car known for its sporty design, efficiency, and versatility. Since its launch in 1984, it has evolved to meet modern drivers' needs, offering economical engines and advanced tech features. Popular in Europe, the Ibiza is a stylish, practical choice for urban driving.</p>
+											<p class="new-cars-para2"></p>
+											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">view details</button>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="new-cars-item">
+							<div class="single-new-cars-item">
+								<div class="row">
+									<div class="col-md-7 col-sm-12">
+										<div class="new-cars-img">
+											<img src="assets/images/new-cars-model/208.jpg" alt="img"/>
+										</div>
+									</div>
+									<div class="col-md-5 col-sm-12">
+										<div class="new-cars-txt">
+											<h2><a href="#">Peugeot 208</a></h2>
+											<p>The Peugeot 208 is a stylish and compact hatchback, known for its modern design, efficient engines, and innovative tech features. With its sporty look and comfortable interior, it’s popular for city driving and longer journeys alike. The latest models also offer electric options, making the 208 a versatile choice for drivers looking for an eco-friendly, agile, and well-equipped urban car.</p>
+											<p class="new-cars-para2"></p>
+											<button class="welcome-btn new-cars-btn" onclick="openPopup()">view details</button>
+										</div>
+										<div class="popup" id="popup">
+											<div class="popup-content">
+												<div class="row">
+													<div class="col-md-7 col-sm-12">
+														<div class="new-cars-img">
+															<img src="assets/images/new-cars-model/208.jpg" alt="img"/>
+														</div>
+													</div>
+													<div class="col-md-5 col-sm-12">
+														<div class="new-cars-txt">
+														<h2><a href="#">Peugeot 208</a></h2>
+														<p>
+															The Peugeot 208 is a stylish and compact hatchback, known for its modern design, efficient engines, and innovative tech features. With its sporty look and comfortable interior, it’s popular for city driving and longer journeys alike. The latest models also offer electric options, making the 208 a versatile choice for drivers looking for an eco-friendly, agile, and well-equipped urban car.											</p>
+														<p class="new-cars-para2"></p>
+														<button class="welcome-btn new-cars-btn" type="button" onclick="closePopup()">Seen</button>
+													</div>
+
+													<script>
+														let popup = document.getElementById('popup');
+														function openPopup(){
+															popup.classList.add('open-popup');
+														}
+														function closePopup(){
+															popup.classList.remove('open-popup');
+														}
+													</script>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div>
+			</div>
+
+		</section>
+		
+
+		
+		<section id="featured-cars" class="featured-cars">
+			<div class="container">
+				<div class="section-header">
+					<p>checkout <span>the</span> featured rides</p>
+					<h2>featured rides</h2>
+				</div>
+				<div class="featured-cars-content">
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/clio4.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2019
+											<span class="featured-mi-span"> 1200 mi</span> 
+											<span class="featured-hp-span"> 180HP</span>
+											 manual
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Tunis - La Marsa</a></h2>
+									<h3>15,00DT</h3>
+									<p>
+										Covoiturage Clio 4 : 4 places disponibles avec espace bagages, départ à 10h du centre-ville. Wi-Fi gratuit à bord pour un trajet confortable et connecté ! 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/kia picanto.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2017
+											<span class="featured-mi-span"> 1100 mi</span> 
+											<span class="featured-hp-span"> 100HP</span>
+											 automatic
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Sfax - Monastir</a></h2>
+									<h3>9,50DT</h3>
+									<p>
+										Covoiturage Kia Picanto : 2 places disponibles pour un départ à 6h de Sfax. Espace bagages prévu pour un trajet confortable. Rejoignez-nous pour un voyage agréable et pratique ! 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/ford fiesta.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2013
+											<span class="featured-mi-span"> 1400 mi</span> 
+											<span class="featured-hp-span"> 100HP</span>
+											 manual
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Bizerte - Gabès</a></h2>
+									<h3>25,00DT</h3>
+									<p>
+										Covoiturage Ford Fiesta : 3 places disponibles pour un départ matinal à 4h de Bizerte, avec espace bagages. Ambiance personnalisée : musique de votre choix ! 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/peugeot301.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2012
+											<span class="featured-mi-span"> 1270 mi</span> 
+											<span class="featured-hp-span"> 88HP</span>
+											 manual
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Béja - Le Kef</a></h2>
+									<h3>30,00DT</h3>
+									<p>
+										Covoiturage Peugeot 301 : Nous proposons 3 places pour un trajet confortable au départ de Béja à 14h, avec espace disponible pour les bagages !</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/i10.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2020
+											<span class="featured-mi-span"> 1100 mi</span> 
+											<span class="featured-hp-span"> 90HP</span>
+											 automatic
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Tunis - Ariana</a></h2>
+									<h3>20,00DT</h3>
+									<p>
+										Covoiturage Huyandai i10 : 2 places disponibles, départ à 17h de Tunis. Voyage agréable et pratique vers l’Ariana. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/golf 6.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model: 2016
+											<span class="featured-mi-span"> 3100 mi</span> 
+											<span class="featured-hp-span"> 240HP</span>
+											 manual
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Bardo - Gammarth</a></h2>
+									<h3>25,00DT</h3>
+									<p>
+										Covoiturage Golf 6 : 3 places disponibles pour un départ à 21h du Bardo. Un trajet confortable et pratique vers Gammarth à la fin de la journée. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/passat.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model:2018
+											<span class="featured-mi-span">900mi</span> 
+											<span class="featured-hp-span">200HP</span>
+											automatic
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Zahra - La Goulette</a></h2>
+									<h3>30,00DT</h3>
+									<p>
+										Covoiturage Passat  : 4 places disponibles pour un départ à 18h de Warda, direction La Goulette. Profitez d’un trajet confortable et pratique en fin de journée. 
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6">
+							<div class="single-featured-cars">
+								<div class="featured-img-box">
+									<div class="featured-cars-img">
+										<img src="assets/images/featured-cars/kia rio.jpg" alt="cars">
+									</div>
+									<div class="featured-model-info">
+										<p>
+											model:2017
+											<span class="featured-mi-span">1100mi</span> 
+											<span class="featured-hp-span">240HP</span>
+											 automatic	
+										</p>
+									</div>
+								</div>
+								<div class="featured-cars-txt">
+									<h2><a href="#">Manzah 6 - Ben Arous</a></h2>
+									<h3>17,00DT</h3>
+									<p>
+										Covoiturage Kia Rio : 3 places disponibles pour un départ à 12h de Manzah 6, direction Ben Arous. 
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+		
+		<section id="clients-say"  class="clients-say">
+			<div class="container">
+				<div class="section-header">
+					<h2>what our clients say</h2>
+				</div>
+				<div class="row">
+					<div class="owl-carousel testimonial-carousel">
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c1.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+										Excellente expérience, conducteur ponctuel et voiture confortable. Je recommande ce service sans hésiter!
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Bilel Troudi</a></h2>
+										<h4>Ben Arous</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c2.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Très bon covoiturage, espace pour les bagages et musique au choix. Service fiable et agréable, je recommande !	
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Samia Bennour</a></h2>
+										<h4>Tunis</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-xs-12">
+							<div class="single-testimonial-box">
+								<div class="testimonial-description">
+									<div class="testimonial-info">
+										<div class="testimonial-img">
+											<img src="assets/images/clients/c3.png" alt="image of clients person" />
+										</div>
+									</div>
+									<div class="testimonial-comment">
+										<p>
+											Trajet impeccable et conducteur sympathique. Je recommande vivement ce site pour un covoiturage de qualité.											
+										</p>
+									</div>
+									<div class="testimonial-person">
+										<h2><a href="#">Karim Jebali</a></h2>
+										<h4>Jendouba</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>	
+		
+
+		
+		<section id="brand"  class="brand">
+			<div class="container">
+				<div class="brand-area">
+					<div class="owl-carousel owl-theme brand-item">
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/assurance ami.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/shell.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/assurance star.png" alt="brand-image" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/pirelli.png" alt="brand-image" />
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/totalenergie.jpg" alt="brand-image" />
+							</a>
+						</div>
+
+						<div class="item">
+							<a href="#">
+								<img src="assets/images/brand/michelin.png" alt="brand-image" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>	
+		
+
+		
+		<section id="blog" class="blog"></section>
+		
+
+		
+		<footer id="contact"  class="contact">
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<div class="footer-logo">
+									<a href="index.html">WASSALNI</a>
+								</div>
+								<p>
+									Carpooling offers a convenient and affordable way for all types of users to travel by sharing a vehicle for a common route.
+								</p>
+								<div class="footer-contact">
+									<p>contact@wassalni.com</p>
+									<p>+216 98 513 126</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>about wassalni</h2>
+								<ul>
+									<li><a href="#">about us</a></li>
+									<li><a href="#">career</a></li>
+									<li><a href="#">terms <span> of service</span></a></li>
+									<li><a href="#">privacy policy</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="single-footer-widget">
+								<h2>most demanded covoiturage routes</h2>
+								<div class="row">
+									<div class="col-md-7 col-xs-6">
+										<ul>
+											<li><a href="#">Tunis - La Marsa</a></li>
+											<li><a href="#">Sfax - Tunis</a></li>
+											<li><a href="#">Tunis - Hammamet</a></li>
+											<li><a href="#">Bizerte - Tunis</a></li>
+											<li><a href="#">Tunis - Sousse</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-offset-1 col-md-3 col-sm-6">
+							<div class="single-footer-widget">
+								<h2>news letter</h2>
+								<div class="footer-newsletter">
+									<p>
+										Subscribe to get latest news  update and informations
+									</p>
+								</div>
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Add Email">
+									</div>
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-arrow-right"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>
+								&copy; copyright.designed and developed by WASSALNI.
+							</p>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-social">
+								<a href="#"><i class="fa fa-facebook"></i></a>	
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+				</div>
+				
+			</div>
+			
+        </footer>
+		
+
+		
+
+
+		<script src="assets/js/jquery.js"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		
+		
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+	
+		<script src="assets/js/bootsnav.js"></script>
+
+		
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+      
+        <script src="assets/js/custom.js"></script>
+
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+		<script src="js/map.js"></script>
+
+        
+    </body>
+
+</html>
