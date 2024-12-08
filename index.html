@@ -51,14 +51,10 @@
     </head>
 
 
-
-
     <body>
-		
-        
+		   
 		<section id="home" class="welcome-hero">
-
-			
+	
 			<div class="top-area">
 				<div class="header-area">
 					
@@ -74,8 +70,6 @@
 				                <a class="navbar-brand" href="index.html">WASSALNI<span></span></a>
 
 				            </div>
-				            
-
 				            
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
@@ -113,23 +107,16 @@
 									<div class="single-model-search">
 										<h2>select date</h2>
 										<div class="model-select-icon">
-											
-												<input type="date" class="form-control">
-
-		
+											<input type="date" class="form-control">
 										</div>
 									</div>
 									<div class="single-model-search">
 										<h2>select payment</h2>
 										<div class="model-select-icon">
 											<select class="form-control">
-
 											  	<option value="default">style</option>
-
 											  	<option value="sedan">Cash</option>
-
 											  	<option value="van">Carte Visa</option>
-
 											</select>
 										</div>
 									</div>
@@ -137,21 +124,18 @@
 								<div class="col-md-offset-1 col-md-2 col-sm-12">
 									<div class="single-model-search">
 										<h2>select departure</h2>
-										<div id="map" style="height: 10px; width: 100%;"></div>
-										<input type="text" id="departure" class="form-control" placeholder="Selected Location" >
+										<div class="model-select-icon">
+											<input type="text" class="form-control" placeholder="Enter destination" />
+										</div>
 									</div>
 									<div class="single-model-search">
 										<h2>select number of places</h2>
 										<div class="model-select-icon">
 											<select class="form-control">
-
 											  	<option value="default">1</option>
-
 											  	<option value="something">2</option>
-
 											  	<option value="something">3</option>
 											  	<option value="something">4</option>
-
 											</select>
 										</div>
 									</div>
@@ -160,12 +144,7 @@
 									<div class="single-model-search">
 										<h2>select destination</h2>
 										<div class="model-select-icon">
-											<select class="form-control">
-
-											  	<option value="default">MAP</option>
-
-											  	
-											</select>
+											<input type="text" class="form-control" placeholder="Enter destination" />
 										</div>
 									</div>
 									<div class="single-model-search">
@@ -265,7 +244,6 @@
 											<h2><a href="#">Volkswagen <span> Polo 7</span></a></h2>
 											<p>The Volkswagen Polo 7, launched in 2017, is a refined and compact hatchback that balances style, technology, and practicality. Known for its spacious interior and smooth ride, it offers advanced safety features and modern infotainment options. With efficient engine choices, the Polo 7 has become a popular choice for those seeking a reliable and well-rounded city car.</p>
 											<p class="new-cars-para2"></p>
-											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">view details</button>
 										</div>	
 									</div>
 								</div>
@@ -284,7 +262,6 @@
 											<h2><a href="#">Seat IBIZA</a></h2>
 											<p>The Seat Ibiza is a compact city car known for its sporty design, efficiency, and versatility. Since its launch in 1984, it has evolved to meet modern drivers' needs, offering economical engines and advanced tech features. Popular in Europe, the Ibiza is a stylish, practical choice for urban driving.</p>
 											<p class="new-cars-para2"></p>
-											<button class="welcome-btn new-cars-btn" onclick="window.location.href='#'">view details</button>
 										</div>	
 									</div>
 								</div>
@@ -303,38 +280,7 @@
 											<h2><a href="#">Peugeot 208</a></h2>
 											<p>The Peugeot 208 is a stylish and compact hatchback, known for its modern design, efficient engines, and innovative tech features. With its sporty look and comfortable interior, it’s popular for city driving and longer journeys alike. The latest models also offer electric options, making the 208 a versatile choice for drivers looking for an eco-friendly, agile, and well-equipped urban car.</p>
 											<p class="new-cars-para2"></p>
-											<button class="welcome-btn new-cars-btn" onclick="openPopup()">view details</button>
 										</div>
-										<div class="popup" id="popup">
-											<div class="popup-content">
-												<div class="row">
-													<div class="col-md-7 col-sm-12">
-														<div class="new-cars-img">
-															<img src="assets/images/new-cars-model/208.jpg" alt="img"/>
-														</div>
-													</div>
-													<div class="col-md-5 col-sm-12">
-														<div class="new-cars-txt">
-														<h2><a href="#">Peugeot 208</a></h2>
-														<p>
-															The Peugeot 208 is a stylish and compact hatchback, known for its modern design, efficient engines, and innovative tech features. With its sporty look and comfortable interior, it’s popular for city driving and longer journeys alike. The latest models also offer electric options, making the 208 a versatile choice for drivers looking for an eco-friendly, agile, and well-equipped urban car.											</p>
-														<p class="new-cars-para2"></p>
-														<button class="welcome-btn new-cars-btn" type="button" onclick="closePopup()">Seen</button>
-													</div>
-
-													<script>
-														let popup = document.getElementById('popup');
-														function openPopup(){
-															popup.classList.add('open-popup');
-														}
-														function closePopup(){
-															popup.classList.remove('open-popup');
-														}
-													</script>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -719,24 +665,6 @@
 											<li><a href="#">Bizerte - Tunis</a></li>
 											<li><a href="#">Tunis - Sousse</a></li>
 										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-offset-1 col-md-3 col-sm-6">
-							<div class="single-footer-widget">
-								<h2>news letter</h2>
-								<div class="footer-newsletter">
-									<p>
-										Subscribe to get latest news  update and informations
-									</p>
-								</div>
-								<div class="hm-foot-email">
-									<div class="foot-email-box">
-										<input type="text" class="form-control" placeholder="Add Email">
-									</div>
-									<div class="foot-email-subscribe">
-										<span><i class="fa fa-arrow-right"></i></span>
 									</div>
 								</div>
 							</div>
