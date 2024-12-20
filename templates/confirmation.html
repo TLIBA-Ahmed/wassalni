@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <style>
+        /* Styles globaux */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #000; /* Fond noir */
+            color: #fff; /* Texte blanc */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* En-tête */
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #4e9eff; /* Bleu éclatant */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Paragraphe */
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #ccc; /* Texte blanc cassé */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Lien */
+        a {
+            display: inline-block;
+            font-size: 1em;
+            color: #fff;
+            background: #4e9eff; /* Bleu éclatant */
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        /* Interaction avec le lien */
+        a:hover {
+            background: #0066cc; /* Bleu plus sombre au survol */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <h1>Merci pour votre inscription, {{ nom }} !</h1>
+    <p>Vos données ont été enregistrées avec succès.</p>
+    <a href="index.html">Retour a l'acceuil</a>
+</body>
+</html>
