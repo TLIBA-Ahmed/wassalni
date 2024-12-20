@@ -63,6 +63,17 @@
 <body>
     <h1>Merci pour votre inscription, {{ nom }} !</h1>
     <p>Vos données ont été enregistrées avec succès.</p>
-    <a href="index.html">Retour a l'acceuil</a>
+    <a href="{{ url_for('index') }}">Retour à l'accueil</a>
+
 </body>
+<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+
 </html>

@@ -25,33 +25,16 @@
 		<link rel="shortcut icon" type="image/icon" href="static/logo/favicon.png"/>
        
       
-        <link rel="stylesheet" href="static/css/font-awesome.min.css">
-
-        
-		<link rel="stylesheet" href="static/css/linearicons.css">
-
-   
-		<link rel="stylesheet" href="static/css/flaticon.css">
-
-
-        <link rel="stylesheet" href="static/css/animate.css">
-
-
-        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="static/css/owl.theme.default.min.css">
-		
-   
-        <link rel="stylesheet" href="static/css/bootstrap.min.css">
-		
-	
-		<link rel="stylesheet" href="static/css/bootsnav.css" >	
-        
-   
-        <link rel="stylesheet" href="static/css/style.css">
-        
-     
-        <link rel="stylesheet" href="static/css/responsive.css">
-        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootsnav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
     </head>
 
 
@@ -75,7 +58,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html">WASSALNI<span></span></a>
+				                <a class="navbar-brand" href="{{ url_for('index') }}">WASSALNI<span></span></a>
 
 				            </div>
 				            
@@ -83,12 +66,12 @@
 				            
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li><a href="index.html">home</a></li>
-				                    <li><a href="service.html">service</a></li>
-				                    <li><a href="featured_rides.html">featured rides</a></li>
-				                    <li class="scroll"><a href="#brand">partners</a></li>
-                                    <li><a href="graph.html">stats</a></li>
-				                    <li><a href="sing.html">sign up</a></li>
+									<li><a href="{{ url_for('index') }}">Home</a></li>
+									<li><a href="{{ url_for('service') }}">Service</a></li>
+									<li><a href="{{ url_for('featured_rides') }}">Featured Rides</a></li>
+									<li class="scroll"><a href="#brand">Partners</a></li>
+									<li><a href="{{ url_for('graph') }}">Stats</a></li>
+									<li><a href="{{ url_for('sing') }}">Sign Up</a></li>	
 				                </ul>
 				            </div>
 				        </div>
@@ -402,33 +385,15 @@
 			</div>
 			
         </footer>
-		
-
-		
-
-
-		<script src="static/js/jquery.js"></script>
-        
-        
+		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		
-        <script src="static/js/bootstrap.min.js"></script>
-		
-	
-		<script src="static/js/bootsnav.js"></script>
-
-		
-        <script src="static/js/owl.carousel.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-      
-        <script src="static/js/custom.js"></script>
-
-		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-		<script src="js/map.js"></script>
-
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="{{ url_for('static', filename='js/map.js') }}"></script>
         
     </body>
 

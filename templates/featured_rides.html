@@ -24,33 +24,16 @@
 		<link rel="shortcut icon" type="image/icon" href="static/logo/favicon.png"/>
        
       
-        <link rel="stylesheet" href="static/css/font-awesome.min.css">
-
-        
-		<link rel="stylesheet" href="static/css/linearicons.css">
-
-   
-		<link rel="stylesheet" href="static/css/flaticon.css">
-
-
-        <link rel="stylesheet" href="static/css/animate.css">
-
-
-        <link rel="stylesheet" href="static/css/owl.carousel.min.css">
-		<link rel="stylesheet" href="static/css/owl.theme.default.min.css">
-		
-   
-        <link rel="stylesheet" href="static/css/bootstrap.min.css">
-		
-	
-		<link rel="stylesheet" href="static/css/bootsnav.css" >	
-        
-   
-        <link rel="stylesheet" href="static/css/style.css">
-        
-     
-        <link rel="stylesheet" href="static/css/responsive.css">
-        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/linearicons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flaticon.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootsnav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
     </head>
 
 
@@ -74,7 +57,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html">WASSALNI<span></span></a>
+				                <a class="navbar-brand" href="{{ url_for('index') }}">WASSALNI<span></span></a>
 
 				            </div>
 				            
@@ -82,12 +65,12 @@
 				            
 				            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
 				                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-				                    <li><a href="index.html">home</a></li>
-				                    <li><a href="service.html">service</a></li>
-				                    <li><a href="featured_rides.html">featured rides</a></li>
-				                    <li class="scroll"><a href="#brand">partners</a></li>
-									<li><a href="graph.html">stats</a></li>
-				                    <li><a href="sing.html">sing up</a></li>
+									<li><a href="{{ url_for('index') }}">Home</a></li>
+									<li><a href="{{ url_for('service') }}">Service</a></li>
+									<li><a href="{{ url_for('featured_rides') }}">Featured Rides</a></li>
+									<li class="scroll"><a href="#brand">Partners</a></li>
+									<li><a href="{{ url_for('graph') }}">Stats</a></li>
+									<li><a href="{{ url_for('sing') }}">Sign Up</a></li>	
 				                </ul>
 				            </div>
 				        </div>
@@ -125,7 +108,7 @@
 									<h2><a href="#">Tunis - La Marsa</a></h2>
 									<h3>15,00DT</h3>
 									<p>
-										Covoiturage Clio 4 : 4 places disponibles avec espace bagages, départ à 10h du centre-ville. Wi-Fi gratuit à bord pour un trajet confortable et connecté ! 
+										Covoiturage Clio 4 : 4 places disponibles avec espace bagages, départ à 10h du centre-ville. Wi-Fi gratuit à bord pour un trajet confortable et connecté ! 98513126
 									</p>
 								</div>
 							</div>
@@ -149,7 +132,7 @@
 									<h2><a href="#">Sfax - Monastir</a></h2>
 									<h3>9,50DT</h3>
 									<p>
-										Covoiturage Kia Picanto : 2 places disponibles pour un départ à 6h de Sfax. Espace bagages prévu pour un trajet confortable. Rejoignez-nous pour un voyage agréable et pratique ! 
+										Covoiturage Kia Picanto : 2 places disponibles pour un départ à 6h de Sfax. Espace bagages prévu pour un trajet confortable. Rejoignez-nous pour un voyage agréable et pratique ! 56975446
 									</p>
 								</div>
 							</div>
@@ -173,7 +156,7 @@
 									<h2><a href="#">Bizerte - Gabès</a></h2>
 									<h3>25,00DT</h3>
 									<p>
-										Covoiturage Ford Fiesta : 3 places disponibles pour un départ matinal à 4h de Bizerte, avec espace bagages. Ambiance personnalisée : musique de votre choix ! 
+										Covoiturage Ford Fiesta : 3 places disponibles pour un départ matinal à 4h de Bizerte, avec espace bagages. Ambiance personnalisée : musique de votre choix ! 22100300
 									</p>
 								</div>
 							</div>
@@ -197,7 +180,7 @@
 									<h2><a href="#">Béja - Le Kef</a></h2>
 									<h3>30,00DT</h3>
 									<p>
-										Covoiturage Peugeot 301 : Nous proposons 3 places pour un trajet confortable au départ de Béja à 14h, avec espace disponible pour les bagages !</p>
+										Covoiturage Peugeot 301 : Nous proposons 3 places pour un trajet confortable au départ de Béja à 14h, avec espace disponible pour les bagages ! 71254587</p>
 								</div>
 							</div>
 						</div>
@@ -222,7 +205,7 @@
 									<h2><a href="#">Tunis - Ariana</a></h2>
 									<h3>20,00DT</h3>
 									<p>
-										Covoiturage Huyandai i10 : 2 places disponibles, départ à 17h de Tunis. Voyage agréable et pratique vers l’Ariana. 
+										Covoiturage Huyandai i10 : 2 places disponibles, départ à 17h de Tunis. Voyage agréable et pratique vers l’Ariana. 25361478
 									</p>
 								</div>
 							</div>
@@ -246,7 +229,7 @@
 									<h2><a href="#">Bardo - Gammarth</a></h2>
 									<h3>25,00DT</h3>
 									<p>
-										Covoiturage Golf 6 : 3 places disponibles pour un départ à 21h du Bardo. Un trajet confortable et pratique vers Gammarth à la fin de la journée. 
+										Covoiturage Golf 6 : 3 places disponibles pour un départ à 21h du Bardo. Un trajet confortable et pratique vers Gammarth à la fin de la journée. 96420636
 									</p>
 								</div>
 							</div>
@@ -270,7 +253,7 @@
 									<h2><a href="#">Zahra - La Goulette</a></h2>
 									<h3>30,00DT</h3>
 									<p>
-										Covoiturage Passat  : 4 places disponibles pour un départ à 18h de Warda, direction La Goulette. Profitez d’un trajet confortable et pratique en fin de journée. 
+										Covoiturage Passat  : 4 places disponibles pour un départ à 18h de Warda, direction La Goulette. Profitez d’un trajet confortable et pratique en fin de journée. 58636170
 									</p>
 								</div>
 							</div>
@@ -294,7 +277,7 @@
 									<h2><a href="#">Manzah 6 - Ben Arous</a></h2>
 									<h3>17,00DT</h3>
 									<p>
-										Covoiturage Kia Rio : 3 places disponibles pour un départ à 12h de Manzah 6, direction Ben Arous. 
+										Covoiturage Kia Rio : 3 places disponibles pour un départ à 12h de Manzah 6, direction Ben Arous. 98513126
 									</p>
 								</div>
 							</div>
@@ -320,7 +303,7 @@
 									<h2><a href="#">Tunis - La Marsa</a></h2>
 									<h3>15,00DT</h3>
 									<p>
-										Covoiturage Kia Stonic : 4 places disponibles avec espace bagages, départ à 10h du centre-ville. Wi-Fi gratuit à bord pour un trajet confortable et connecté ! 
+										Covoiturage Kia Stonic : 4 places disponibles avec espace bagages, départ à 10h du centre-ville. Wi-Fi gratuit à bord pour un trajet confortable et connecté ! 28586395
 									</p>
 								</div>
 							</div>
@@ -344,7 +327,7 @@
 									<h2><a href="#">Sfax - Monastir</a></h2>
 									<h3>9,50DT</h3>
 									<p>
-										Covoiturage Kia Picanto : 2 places disponibles pour un départ à 6h de Sfax. Espace bagages prévu pour un trajet confortable. Rejoignez-nous pour un voyage agréable et pratique ! 
+										Covoiturage Kia Picanto : 2 places disponibles pour un départ à 6h de Sfax. Espace bagages prévu pour un trajet confortable. Rejoignez-nous pour un voyage agréable et pratique ! 51114564
 									</p>
 								</div>
 							</div>
@@ -368,7 +351,7 @@
 									<h2><a href="#">Bizerte - Gabès</a></h2>
 									<h3>25,00DT</h3>
 									<p>
-										Covoiturage Ford Fiesta : 3 places disponibles pour un départ matinal à 4h de Bizerte, avec espace bagages. Ambiance personnalisée : musique de votre choix ! 
+										Covoiturage Ford Fiesta : 3 places disponibles pour un départ matinal à 4h de Bizerte, avec espace bagages. Ambiance personnalisée : musique de votre choix ! 72369524
 									</p>
 								</div>
 							</div>
@@ -392,7 +375,7 @@
 									<h2><a href="#">Béja - Le Kef</a></h2>
 									<h3>30,00DT</h3>
 									<p>
-										Covoiturage Polo 7 : Nous proposons 3 places pour un trajet confortable au départ de Béja à 14h, avec espace disponible pour les bagages !</p>
+										Covoiturage Polo 7 : Nous proposons 3 places pour un trajet confortable au départ de Béja à 14h, avec espace disponible pour les bagages ! 74326598</p>
 								</div>
 							</div>
 						</div>
@@ -417,7 +400,7 @@
 									<h2><a href="#">Tunis - Ariana</a></h2>
 									<h3>20,00DT</h3>
 									<p>
-										Covoiturage Chevrolet : 2 places disponibles, départ à 17h de Tunis. Voyage agréable et pratique vers l’Ariana. 
+										Covoiturage Chevrolet : 2 places disponibles, départ à 17h de Tunis. Voyage agréable et pratique vers l’Ariana. 92732904
 									</p>
 								</div>
 							</div>
@@ -441,7 +424,7 @@
 									<h2><a href="#">Bardo - Gammarth</a></h2>
 									<h3>25,00DT</h3>
 									<p>
-										Covoiturage MG Zs : 3 places disponibles pour un départ à 21h du Bardo. Un trajet confortable et pratique vers Gammarth à la fin de la journée. 
+										Covoiturage MG Zs : 3 places disponibles pour un départ à 21h du Bardo. Un trajet confortable et pratique vers Gammarth à la fin de la journée. 98961986
 									</p>
 								</div>
 							</div>
@@ -465,7 +448,7 @@
 									<h2><a href="#">Zahra - La Goulette</a></h2>
 									<h3>30,00DT</h3>
 									<p>
-										Covoiturage Chery Tiggo  : 4 places disponibles pour un départ à 18h de Warda, direction La Goulette. Profitez d’un trajet confortable et pratique en fin de journée. 
+										Covoiturage Chery Tiggo  : 4 places disponibles pour un départ à 18h de Warda, direction La Goulette. Profitez d’un trajet confortable et pratique en fin de journée. 98615468
 									</p>
 								</div>
 							</div>
@@ -489,7 +472,7 @@
 									<h2><a href="#">Manzah 6 - Ben Arous</a></h2>
 									<h3>17,00DT</h3>
 									<p>
-										Covoiturage Suzuki Swift : 3 places disponibles pour un départ à 12h de Manzah 6, direction Ben Arous. 
+										Covoiturage Suzuki Swift : 3 places disponibles pour un départ à 12h de Manzah 6, direction Ben Arous. 99152485
 									</p>
 								</div>
 							</div>
@@ -624,32 +607,15 @@
 			</div>
 			
         </footer>
-		
-
-		
-
-
-		<script src="static/js/jquery.js"></script>
-        
-        
+		<script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		
-        <script src="static/js/bootstrap.min.js"></script>
-		
-	
-		<script src="static/js/bootsnav.js"></script>
-
-		
-        <script src="static/js/owl.carousel.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-      
-        <script src="static/js/custom.js"></script>
-
-		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-		<script src="js/map.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootsnav.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="{{ url_for('static', filename='js/map.js') }}"></script>
 
         
     </body>
